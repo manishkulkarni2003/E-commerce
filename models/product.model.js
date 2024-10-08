@@ -3,10 +3,8 @@ const mongoose = require("mongoose")
 
 
 const productSchema = new mongoose.Schema({
-    image: {
-        type: String
+    image: Buffer,
 
-    },
     price: {
         type: Number,
         required: true
